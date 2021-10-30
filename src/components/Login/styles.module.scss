@@ -1,0 +1,45 @@
+.main {
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 42px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .spotifyText {
+    color: #67d567;
+  }
+
+  .spotifyButton {
+    display: flex;
+    align-items: center;
+
+    color: #1b1f22;
+    background: #67d567;
+    border: 0;
+    border-radius: 4px;
+
+    font-size: 19px;
+    font-weight: bold;
+
+    padding: 1rem;
+
+    cursor: pointer;
+
+    svg {
+      margin-left: 0.5rem;
+    }
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}

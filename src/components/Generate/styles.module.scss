@@ -1,0 +1,198 @@
+.container {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+
+  span {
+    font-size: 20px;
+  }
+
+  .logoutButton {
+    color: #1b1f22;
+    background: #67d567;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+
+    cursor: pointer;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .festival {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #1b1f22;
+    background: url('../../assets/bg-festival.png') no-repeat;
+    background-size: 540px;
+    width: 540px;
+    height: 540px;
+
+    padding: 2rem;
+
+    svg {
+      margin: 0 1rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      background-size: 365px;
+      width: 365px;
+      height: 365px;
+      padding: 0;
+
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    .day {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        margin: 0;
+        text-align: center;
+        color: #1b1f22;
+      }
+
+      .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        text-align: center;
+        font-size: 22px;
+
+        padding: 1rem 0;
+
+        span {
+          margin-left: 0.5rem;
+
+          &::after {
+            content: ' • ';
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        h2 {
+          font-size: 16px;
+        }
+
+        .list {
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .dayOne {
+      h2 {
+        background: #67d567;
+      }
+
+      .list {
+        & > span:nth-child(-n + 3) {
+          font-weight: bold;
+        }
+
+        span {
+          &::after {
+            color: #67d567;
+          }
+        }
+      }
+    }
+
+    .dayTwo {
+      h2 {
+        background: #e78127;
+        font-size: 20px;
+      }
+
+      .list {
+        span {
+          font-size: 20px;
+          &::after {
+            color: #e78127;
+          }
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        h2 {
+          font-size: 14px;
+        }
+
+        .list {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .dayThree {
+      h2 {
+        background: #e15cbe;
+        font-size: 16px;
+      }
+
+      .list {
+        span {
+          font-size: 16px;
+          &::after {
+            color: #e15cbe;
+          }
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        h2 {
+          font-size: 12px;
+        }
+
+        .list {
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .downloadButton {
+    background: #67d567;
+    color: #1b1f22;
+    border: 0;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-top: 2rem;
+    padding: 0.8rem;
+    border-radius: 4px;
+  }
+}

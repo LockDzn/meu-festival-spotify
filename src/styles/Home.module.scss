@@ -1,0 +1,17 @@
+.container {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.footer {
+  p {
+    .twitter {
+      color: #67d567;
+      text-decoration: underline;
+    }
+  }
+}
