@@ -9,7 +9,7 @@ export function Login() {
   const [spotifyOAuth, setSpotifyOAuth] = useState('')
 
   useEffect(() => {
-    axios.get('/api/spotify').then((response) => {
+    axios.get('/api/oauth').then((response) => {
       setSpotifyOAuth(response.data.link)
     })
   }, [])
