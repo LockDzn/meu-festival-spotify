@@ -12,6 +12,8 @@ Tools used
 - [Spotify API](https://developer.spotify.com/documentation/web-api/)
 
 
+To run:
+
 ```bash
 npm run dev
 # or
